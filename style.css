@@ -1,0 +1,93 @@
+/* Reset default margin and padding */
+body, h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Set a background color and font family for the entire page */
+body {
+  background-color: #f0f0f0;
+  font-family: 'Itim', cursive;
+
+}
+
+/* Style the main container */
+.main-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the title */
+.title h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.title label {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Style the display area */
+.display {
+  font-size: 24px;
+  color: #444;
+  margin: 20px 0;
+}
+
+/* Style the container for the game grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Style individual tiles */
+.tile {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #333;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tile:hover {
+  background-color: #eee;
+}
+
+/* Style the player's turn display */
+.display-player {
+  font-weight: bold;
+}
+
+/* Style the announcer message */
+.announcer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Style the reset button */
+#reset {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #0056b3;
+}
